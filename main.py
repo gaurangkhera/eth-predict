@@ -26,5 +26,5 @@ print(acc)
 prd = linear.predict(x_test)
 
 for i in range(len(prd)):
-    page_data = 'Predicted final grade:', prd[i], 'Data: ',x_test[i]
+    page_data = 'Predicted price:', prd[i], 'Data: ',x_test[i]
     print(page_data)
