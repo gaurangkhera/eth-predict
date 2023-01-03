@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}
+    Home
+{% endblock %}
+{% block content %}
+<center>
+    <form action="/" method="post">
+        {{form.hidden_tag()}}
+        {{form.csrf_token}}
+        {{form.open(class='form-control', placeholder='open')}}
+        {{form.volume_usd(class='form-control', placeholder='volume in usd')}}
+        {{form.volume_ccy(class='form-control', placeholder='volume in cryptocurrency')}}
+        {{form.submit(class='btn btn-primary')}}
+    </form>
+    {{page_data}}
+    </center>
+{% endblock %}
